@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: backend/Dockerfile
     ports:
-      - "8000:8000"
+      - "4000:4000"
     volumes:
       - backend_data:/app/data # Mount the named volume to /app/data directory
     environment:
@@ -20,9 +20,9 @@ services:
       context: .
       dockerfile: frontend/Dockerfile
     ports:
-      - "3000:3000"
+      - "3002:3002"
     environment:
-      NEXT_PUBLIC_API_URL: "http://backend:8000" # Communicate with backend service by its name
+      NEXT_PUBLIC_API_URL: "http://backend:4000" # Communicate with backend service by its name
     depends_on:
       - backend
 
