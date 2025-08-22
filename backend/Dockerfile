@@ -3,6 +3,9 @@ FROM python:3.13-slim-bookworm
 
 WORKDIR /app
 
+# Create the directory for the SQLite database and set permissions
+RUN mkdir -p /app/data && chmod -R 777 /app/data
+
 # Install dependencies
 COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
