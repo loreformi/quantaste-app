@@ -8,9 +8,9 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - backend_data:/app/quantaste.db # Persist SQLite database
+      - backend_data:/app/data # Mount the named volume to /app/data directory
     environment:
-      DATABASE_URL: "sqlite:///quantaste.db"
+      DATABASE_URL: "sqlite:///data/quantaste.db" # Database file inside /app/data
       DEFAULT_TICKERS: "AAPL,MSFT,GOOGL,AMZN,TSLA,NVDA"
     # depends_on:
     #   - db # Uncomment if using a separate database service like PostgreSQL
