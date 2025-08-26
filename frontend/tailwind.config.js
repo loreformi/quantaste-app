@@ -7,19 +7,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: {
-          DEFAULT: '#1a1a1a', // Main background
-          card: '#2a2a2a', // Card background
-          border: '#3a3a3a', // Border color
-        },
-        primary: '#007bff', // Blue for interactive elements
-        secondary: '#6c757d', // Grey for secondary text
-        success: '#28a745', // Green for positive
-        warning: '#ffc107', // Yellow/Orange for neutral/warning
-        danger: '#dc3545', // Red for negative
-        info: '#17a2b8', // Info blue
-        light: '#f8f9fa', // Light text
-        darktext: '#343a40', // Dark text on light backgrounds
+        dark: '#0D1117',
+        'dark-card': '#161B22',
+        'dark-border': '#30363D',
+        primary: '#58A6FF',
+        secondary: '#8B949E',
+        success: '#3FB950',
+        danger: '#F85149',
+        warning: '#D29922',
+        light: '#C9D1D9',
+        white: '#FFFFFF',
       },
     },
   },
